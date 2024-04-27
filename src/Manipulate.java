@@ -26,6 +26,7 @@ public class Manipulate {
         for (String column : colNames.keySet()) {
             create += column + " " + colNames.get(column);
         }
+
         create += ");";
         st.executeQuery(create);
     }
